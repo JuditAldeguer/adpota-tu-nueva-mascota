@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   background-image: url('../images/header-background.png');
-}
-.title {
-  color: white;
-  text-align: center;
+  &--img {
+    width: 25px;
+    height: 25px;
+  }
+  &--title {
+    color: white;
+    text-align: center;
+  }
 }
