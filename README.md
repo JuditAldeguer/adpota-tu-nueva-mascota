@@ -1,10 +1,14 @@
 ## Hola, soy *Judit Aldeguer*👋
 
-Con este proyecto deseo proporcionar una aplicación web que contenga una Base de Datos, lo más completa posible, sobre los/las perros/as disponibles para la adopción en las diferentes perreras que se inscriban al portal.
+Con este proyecto deseo proporcionar una aplicación web que contenga una Base de Datos, lo más completa posible, sobre los/las perros/as disponibles para la adopción en las diferentes perreras que deseen inscribirse al portal.
 
-Deseo facilitar que las perreras tengas más visibilidad, los/las perros/as más facilidad de ser acogidos/as a un nuevo hogar y los/las interesados/as en adoptar, una forma centralizada de localizar la mascota que más se ajuste a su situación.
+### Finalidad del proyecto
 
-## ¿Qué fucionalidades tiene la web?
+- Mayor visibilidad a las perreras
+- Potenciar que los/las perros/as sean más facilmente acogidos/as a un nuevo hogar
+- Facilitar una forma centralizada de localizar la mascota que más se ajuste a tu situación.
+
+### ¿Qué fucionalidades tiene la web?
 
 - Servidor que recoge los datos de todos los perros en distintas perras y unifica la información en un solo lugar.
 - Servicio de filtrado.
