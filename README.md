@@ -18,7 +18,7 @@ Con este proyecto deseo proporcionar una aplicación web que contenga una Base d
 
 ### 💬 Contacto:
 
-Contactadme a través de mi mail jud.vicens@gmail.com o mi <a href="https://www.linkedin.com/in/juditaldeguer/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="judit aldeguer" height="20" width="40" />Judit Aldeguer</a>
+Puedes contactarme a través de mi mail jud.vicens@gmail.com o mi <a href="https://www.linkedin.com/in/juditaldeguer/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="judit aldeguer" height="20" width="40" />Judit Aldeguer</a>
 <br>
 <br>  
 ✨ Quedo a vuestra disposición, ✨  
