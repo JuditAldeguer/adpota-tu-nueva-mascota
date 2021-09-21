@@ -5,13 +5,25 @@
 }
 
 .header {
-  background-image: url('../images/header-background.png');
-  &--img {
-    width: 25px;
-    height: 25px;
+  &--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0;
+    border-bottom: solid lightgrey 2px;
   }
-  &--title {
-    color: white;
-    text-align: center;
+  & .div2 {
+    justify-content: space-between;
+    //background-color: lightseagreen; //pendiente eliminar
+  }
+  &--img {
+    text-align: left;
+    width: 100px;
+    height: 100px;
+    &__lang {
+      text-align: center;
+      width: 10px;
+      height: 10px;
+    }
   }
 }

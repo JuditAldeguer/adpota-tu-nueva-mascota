@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import { useState } from 'react';
-import logoPatas from '../images/icono-patas.jpeg';
+import perrito from '../images/perrito.png';
 
 function App() {
   //estados
@@ -12,10 +12,14 @@ function App() {
   return (
     <div>
       <header className="header">
-        <h1 className="header--title">
-          Encuentra tu mitad perruna{' '}
-          <img className="header--img" src={logoPatas} alt="pata" />
-        </h1>
+        <div className="header--div">
+          <img className="header--img__lang" src={perrito} alt="pata" />
+        </div>
+        <div className="header--div div2">
+          <img className="header--img" src={perrito} alt="pata" />
+          <h2>hola</h2>
+          <i className="fas fa-search"></i>
+        </div>
         <menu>{/* hamburguesa */}</menu>
       </header>
       <main>contenido</main>
