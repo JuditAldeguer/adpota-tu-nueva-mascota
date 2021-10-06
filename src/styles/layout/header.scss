@@ -5,21 +5,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 0;
+    padding: 2px 2rem;
     border-bottom: solid lightgrey 2px;
+    background-color: #33333325;
   }
   & .div2 {
     justify-content: space-between;
-    //background-color: lightseagreen; //pendiente eliminar
+    background-color: #33333311;
   }
   &--img {
     text-align: left;
-    width: 100px;
-    height: 100px;
-    &__lang {
-      text-align: center;
-      width: 10px;
-      height: 10px;
-    }
+    width: 50px;
+    height: 50px;
+  }
+}
+
+li {
+  display: inline;
+  padding-left: 1rem;
+  .span {
+    display: none;
   }
 }
