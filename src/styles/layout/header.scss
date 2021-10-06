@@ -20,11 +20,18 @@
   }
 }
 
-li {
-  display: inline;
-  padding-left: 1rem;
-  .span {
-    display: none;
+header {
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+    padding-left: 1rem;
+    .span {
+      display: none;
+    }
   }
 }
 .hidden {

@@ -61,11 +61,11 @@ const Header = (props) => {
       <div className="header--div div2">
         <img className="header--img" src={perrito} alt="pata" />
         <i className="fas fa-search" onClick={handleClickSearch}></i>
-        <form className={infoShown} action="">
+        {/* <form className={infoShown} action="">
           <Input />
         </form>
+        <menu>{/* hamburguesa </menu> */}
       </div>
-      <menu>{/* hamburguesa */}</menu>
     </header>
   );
 };
