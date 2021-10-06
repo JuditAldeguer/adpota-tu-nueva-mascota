@@ -1,28 +1,40 @@
+import { useEffect, useState } from 'react';
+import { v4 as uuid } from 'uuid'; // al generar id={uuid()}
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
+import PropTypes from 'prop-types';
+//Services
+import callToApi from '../services/api';
+import ls from '../services/local-storage.js'; //localStorage
+import date from '../services/date'; //fecha usamos date: date.getCurrentDate()
+//Styles
 import '../styles/App.scss';
-import { useState } from 'react';
-import perrito from '../images/perrito.png';
+//Components
+import Header from './Header';
+import Footer from './Footer';
+import ProductDetail from './/secondary-components/ProductDetail';
+import NotFoundPage from './secondary-components/NotFoundPage';
 
 function App() {
-  //estados
-  const [] = useState('');
+  const routeData = useRouteMatch('/product-detail/:id');
+  const productId = routeData !== null ? routeData.params.productId : '';
 
-  //funciones
-
-  //return
   return (
-    <div>
-      <header className="header">
-        <div className="header--div">
-          <img className="header--img__lang" src={perrito} alt="pata" />
-        </div>
-        <div className="header--div div2">
-          <img className="header--img" src={perrito} alt="pata" />
-          <h2>hola</h2>
-          <i className="fas fa-search"></i>
-        </div>
-        <menu>{/* hamburguesa */}</menu>
-      </header>
-      <main>contenido</main>
+    <div className="page">
+      <Header productId="321" />{' '}
+      {/* pendiente introducir numero id con find() tras callToApi */}
+      <Switch>
+        <Route path="/" exact>
+          <h1>Bienvenida a la pagina de inicio</h1>
+          <p>Catálogo</p>
+        </Route>
+        <Route path="/product-detail/">
+          <ProductDetail productId={productId} />
+        </Route>
+        <Route>
+          <NotFoundPage />
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
 }
