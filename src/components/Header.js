@@ -1,11 +1,22 @@
 //Styless
 import '../styles/layout/header.scss';
+//images
 import perrito from '../images/perrito.png';
 import esFlag from '../images/es.png';
 import caFlag from '../images/ca.png';
 import enFlag from '../images/en.png';
+//components
+import Input from '../components/secondary-components/Input';
+import { useState } from 'react';
 
 const Header = (props) => {
+  const [infoShown, setInfoShown] = useState('hidden');
+
+  const handleClickSearch = () => {
+    setInfoShown('');
+    // pendiente toggle
+  };
+
   return (
     <header className="header">
       <div className="header--div">
@@ -49,8 +60,10 @@ const Header = (props) => {
       </div>
       <div className="header--div div2">
         <img className="header--img" src={perrito} alt="pata" />
-        <h2>hola</h2>
-        <i className="fas fa-search"></i>
+        <i className="fas fa-search" onClick={handleClickSearch}></i>
+        <form className={infoShown} action="">
+          <Input />
+        </form>
       </div>
       <menu>{/* hamburguesa */}</menu>
     </header>
