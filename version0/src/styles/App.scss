@@ -1,6 +1,8 @@
-@import '../core/variables.scss';
-
-<<<<<<< HEAD
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .header {
   &--div {
@@ -24,15 +26,4 @@
       height: 10px;
     }
   }
-=======
-header {
-  background-image: url('../../images/header-background.png');
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-}
-.title {
-  color: white;
-  text-align: center;
->>>>>>> dev
 }

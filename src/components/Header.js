@@ -1,5 +1,6 @@
 //Styless
 import '../styles/layout/header.scss';
+<<<<<<< HEAD
 import perrito from '../images/perrito.png';
 
 const Header = (props) => {
@@ -14,6 +15,24 @@ const Header = (props) => {
         <i className="fas fa-search"></i>
       </div>
       <menu>{/* hamburguesa */}</menu>
+=======
+//Components
+import Links from './secondary-components/Links';
+
+const Header = (props) => {
+  const handleBackBtn = (ev) => {
+    ev.preventDefault();
+    window.history.back();
+  };
+
+  return (
+    <header>
+      <h1 className="title">Starter Kit</h1>
+      <Links productId={props.productId} />
+      <button title="atrás" onClick={handleBackBtn}>
+        Volver atrás
+      </button>
+>>>>>>> dev
     </header>
   );
 };
