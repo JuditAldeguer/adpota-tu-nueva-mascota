@@ -20,8 +20,7 @@ function App() {
 
   return (
     <div className="page">
-      <Header productId="321" />{' '}
-      {/* pendiente introducir numero id con find() tras callToApi */}
+      <Header />
       <Switch>
         <Route path="/" exact>
           <h1>Bienvenida a la pagina de inicio</h1>
